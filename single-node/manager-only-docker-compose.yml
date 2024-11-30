@@ -142,6 +142,8 @@ services:
   #   links:
   #     - wazuh.indexer:wazuh.indexer
   #     - wazuh.manager:wazuh.manager
+    networks:
+      - shared_soc-in-a-box
 
 volumes:
   wazuh_api_configuration:
@@ -158,3 +160,7 @@ volumes:
   # wazuh-indexer-data:
   # wazuh-dashboard-config:
   # wazuh-dashboard-custom:
+
+networks:
+  shared_soc-in-a-box:
+    external: true
