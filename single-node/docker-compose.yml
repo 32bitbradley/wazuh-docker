@@ -100,7 +100,7 @@ services:
       - wazuh.indexer
     links:
       - wazuh.indexer:wazuh.indexer
-      # - wazuh.manager:wazuh.manager
+      - wazuh.manager:wazuh.manager
     networks:
       - soc-in-a-box
 
