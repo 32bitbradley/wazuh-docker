@@ -2,3 +2,9 @@ single-node/config/wazuh_indexer_ssl_certs/*.pem
 single-node/config/wazuh_indexer_ssl_certs/*.key
 multi-node/config/wazuh_indexer_ssl_certs/*.pem
 multi-node/config/wazuh_indexer_ssl_certs/*.key
+
+# Ignore soc-in-a-box prefixed files
+soc-in-a-box-*
+
+# Ignore changes to wazuh.yml to allow custom management
+single-node/config/wazuh_dashboard/wazuh.yml
